@@ -1,0 +1,452 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Adiciona fonte */
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.header-0 {
+    display: flex;
+    background-color: rgb(29, 80, 138);
+    text-align: center;
+    border-bottom: 5px solid rgb(2, 36, 82);
+    /*border-left: 5px solid rgb(0, 0, 0);*/
+    /* border-radius: 10px; */ /* Remove borda arredondada */
+    color: white;
+
+}
+body {
+    margin: 0%;
+}
+.body-0 {
+    background: rgb(211, 211, 211);
+    background: linear-gradient(180deg, rgb(201, 201, 201) 0%, rgb(211, 211, 211) 100%);
+
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    color: rgb(0, 0, 0);
+
+
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.103);
+    /* border-radius: 35px; */ /* Remove borda arredondada */
+    max-width: 500px;
+
+}
+
+.social-media {
+    display: block;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    /* border-radius: 5px; */ /* Remove borda arredondada */
+    position: relative;
+    top: 10%;
+    right: 0;
+
+    transform: translateY(-5%);
+
+}
+
+.social-media button {
+    /* border-radius: 100%; */ /* Remove borda arredondada */
+    border-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 5px;
+
+}
+
+.social-media button :hover {
+    /* border-radius: 100%; */ /* Remove borda arredondada */
+    background-color: rgb(52, 116, 189);
+}
+
+
+.about-me {
+    text-align: left;
+    /*border-bottom: 5px solid;*/
+    border-left: 10px solid;
+    border-color: rgba(29, 80, 138, 1);
+    /*border-radius: 30px;*/
+    /* border-bottom-left-radius: 10px; */ /* Remove borda arredondada */
+    /* border-top-left-radius: 10px; */ /* Remove borda arredondada */
+    background-color: rgb(230, 230, 230);
+    margin: 10px;
+}
+
+.projects {
+    text-align: left;
+    padding: 20px;
+    border-left: 10px solid;
+    border-color: rgba(29, 80, 138, 1);
+    /* border-bottom-left-radius: 10px; */ /* Remove borda arredondada */
+    /* border-top-left-radius: 10px; */ /* Remove borda arredondada */
+    background-color: rgb(245, 245, 245); /* Lighter background */
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.projects h4 {
+    margin-top: 20px;
+    color: rgba(29, 80, 138, 1);
+}
+
+.projects p {
+    line-height: 1.6;
+}
+
+.projects img,
+.projects-1 img,
+.projects-2 img {
+    cursor: pointer; /* Add cursor pointer to indicate clickability */
+    transition: transform 0.2s ease; /* Optional: subtle hover effect */
+}
+
+.projects img:hover,
+.projects-1 img:hover,
+.projects-2 img:hover {
+    transform: scale(1.05); /* Optional: slight zoom on hover */
+}
+
+/* Modal Styles */
+.image-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.85); /* Black w/ opacity */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 85%;
+    max-height: 85%;
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Add Animation (optional) */
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.4s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+.body-1 {
+    background: rgb(46, 46, 46);
+    background: linear-gradient(180deg, rgb(40, 40, 40) 0%, rgb(46, 46, 46) 100%);
+
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    color: rgb(240, 240, 240);
+
+
+}
+.about-me-1 {
+    text-align: left;
+    /*border-bottom: 5px solid;*/
+    border-left: 10px solid;
+    border-color: rgba(29, 80, 138, 1);
+    /*border-radius: 30px;*/
+    /* border-bottom-left-radius: 10px; */ /* Remove borda arredondada */
+    /* border-top-left-radius: 10px; */ /* Remove borda arredondada */
+    background-color: rgb(52, 52, 52);
+    margin: 10px;
+}
+
+.projects-1 {
+    text-align: left;
+    padding: 20px;
+    border-left: 10px solid;
+    border-color: rgba(29, 80, 138, 1);
+    /* border-bottom-left-radius: 10px; */ /* Remove borda arredondada */
+    /* border-top-left-radius: 10px; */ /* Remove borda arredondada */
+    background-color: rgb(52, 52, 52);
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.projects-1 h4 {
+    margin-top: 20px;
+    color: #6caddf; /* Lighter blue for dark theme */
+}
+
+.projects-1 p {
+    line-height: 1.6;
+}
+
+.projects-1 img {
+    max-width: 200px; 
+    margin: 10px 5px;
+    border-radius: 8px; 
+    border: 1px solid #444; /* Darker border for dark theme */
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+.header-2 {
+    display: flex;
+    background-color: rgb(138, 29, 29);
+    background: linear-gradient(90deg, rgb(138, 29, 29) 0%, rgb(187, 55, 55) 100%);
+    text-align: center;
+    border-bottom: 5px solid rgb(82, 2, 2);
+    /*border-left: 5px solid rgb(0, 0, 0);*/
+    /* border-radius: 10px; */ /* Remove borda arredondada */
+    color: white;
+
+}
+.body-2 {
+    background: rgb(46, 46, 46);
+    background: linear-gradient(180deg, rgb(40, 40, 40) 0%, rgb(46, 46, 46) 100%);
+
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    color: rgb(240, 240, 240);
+
+
+}
+.about-me-2 {
+    text-align: left;
+    /*border-bottom: 5px solid;*/
+    border-left: 10px solid;
+    border-color: rgb(138, 29, 29);
+    /*border-radius: 30px;*/
+    /* border-bottom-left-radius: 10px; */ /* Remove borda arredondada */
+    /* border-top-left-radius: 10px; */ /* Remove borda arredondada */
+    background-color: rgb(52, 52, 52);
+    margin: 10px;
+}
+
+.projects-2 {
+    text-align: left;
+    padding: 20px;
+    border-left: 10px solid;
+    border-color: rgb(138, 29, 29);
+    /* border-bottom-left-radius: 10px; */ /* Remove borda arredondada */
+    /* border-top-left-radius: 10px; */ /* Remove borda arredondada */
+    background-color: rgb(52, 52, 52);
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.projects-2 h4 {
+    margin-top: 20px;
+    color: #e06c6c; /* Lighter red for dark theme */
+}
+
+.projects-2 p {
+    line-height: 1.6;
+}
+
+.projects-2 img {
+    max-width: 200px; 
+    margin: 10px 5px;
+    /* border-radius: 8px; */ /* Remove borda arredondada */
+    border: 1px solid #444; 
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+.imgtext {
+    margin: 10px;
+    /* border-radius: 50%; */ /* Remove borda arredondada */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 20px 0; /* Add some vertical spacing */
+}
+
+.body-1 hr, .body-2 hr {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 75%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/* slideShow -------------------------------------------------------------------------------------------------------*/
+
+.projects.wrapper {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    left: 10%;
+
+
+}
+
+.wrapper img {
+    max-width: 240px;
+    border: 2px solid #ffffff;
+    /* border-radius: 8px; */ /* Remove borda arredondada */
+}
+
+/* Buttons---------------------------------------------------------------------------------------------------------*/
+.btn-0
+{
+    /* border-radius: 100%; */ /* Remove borda arredondada */
+    background: rgb(0,116,255);
+    background: linear-gradient(45deg,  rgb(194, 194, 194) 0%, rgba(17, 67, 128,1) 100%);
+    border: 2px solid rgb(202, 217, 235);
+    width: 1vw;
+    height: 2vh;
+    align-self: center;
+
+}
+.btn-0:hover
+{
+    /* border-radius: 100%; */ /* Remove borda arredondada */
+    background: rgb(0,116,255);
+    background: linear-gradient(45deg, rgb(194, 194, 194) 0%, rgba(17, 67, 128,1) 100%);
+    border: 2px solid rgb(30, 161, 30);
+    width: 1vw;
+    height: 2vh;
+    align-self: center;
+    
+}
+/*_________________________________________________________________________________________________*/
+.btn-1
+{
+    /* border-radius: 100%; */ /* Remove borda arredondada */
+    background: rgb(29, 29, 29);
+    background: linear-gradient(45deg, rgb(29, 29, 29) 10%, rgb(22, 84, 160) 100%);
+    border: 2px solid rgb(202, 217, 235);
+    width: 1vw;
+    height: 2vh;
+    align-self: center;
+
+}
+.btn-1:hover
+{
+    /* border-radius: 100%; */ /* Remove borda arredondada */
+    background: rgb(29, 29, 29);
+    background: linear-gradient(45deg, rgb(29, 29, 29) 10%, rgb(22, 84, 160) 100%);
+    border: 2px solid rgb(30, 161, 30);
+    width: 1vw;
+    height: 2vh;
+    align-self: center;
+    
+}
+/*_________________________________________________________________________________________________*/
+.btn-2
+{
+    /* border-radius: 100%; */ /* Remove borda arredondada */
+    background: rgb(255,0,0);
+    background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 68%);
+    border: 2px solid rgb(202, 217, 235);
+    width: 1vw;
+    height: 2vh;
+    align-self: center;
+
+}
+.btn-2:hover
+{
+    /* border-radius: 100%; */ /* Remove borda arredondada */
+    background: rgb(255,0,0);
+    background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 68%);
+    border: 2px solid rgb(30, 161, 30);
+    width: 1vw;
+    height: 2vh;
+    align-self: center;
+    
+}
