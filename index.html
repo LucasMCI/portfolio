@@ -1,196 +1,532 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lucas Marcelo C.I</title>
+  <title>Lucas Marcelo | Desenvolvedor Full Stack</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<header class="header-0">
-  <h1 style="margin: 10px;">Lucas Marcelo C.I</h1>
-  <button id="btn0" class="btn-0"></button>
-  <button id="btn1" class="btn-1"></button>
-  <button id="btn2" class="btn-2"></button>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <h1>DevPortfolio</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#sobre-mim">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="theme-toggle">
+        <button id="theme-button"><i class="fas fa-moon"></i></button>
+      </div>
+    </div>
+  </header>
 
-</header>
-
-<body class="body-0">
-  <div class="row">
-    <div class="col-3">
-      <div class="container">
-        <div class="social-media">
-          <a href="https://www.linkedin.com/in/lucas-marcelo-4259b8168/"><button><img src="imgs/lin.png" width="50"
-                height="auto"></button></a>
-          <a href="https://github.com/LucasMCI"><button><img src="imgs/git.png" width="50" height="auto"></button></a>
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Olá, eu sou <span class="highlight">Lucas Marcelo</span></h1>
+        <h2>Desenvolvedor Full Stack</h2>
+        <p class="hero-description">Especializado em desenvolvimento web com foco em PHP, MySQL, HTML, CSS e JavaScript. Criando soluções web eficientes e modernas.</p>
+        <div class="hero-buttons">
+          <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+          <a href="#contato" class="btn btn-outline">Contato</a>
         </div>
+      </div>
+      <div class="hero-image">
+        <img src="imgs/perfil.jpg" alt="Imagem de perfil" class="profile-image">
+      </div>
+    </div>
+  </section>
 
-        <div id="about-me" class="about-me">
-          <h2>Sobre Mim</h2>
-          <p>Olá me chamo Lucas, atualmente trabalho com desenvolvimento web através de uma ferramenta chamada
-            ScriptCase.
-            <br>
-            Trabalho com diversas ferramentas da Web sendo elas HTML, CSS, Javascript e PHP, porém com <br>
-            um foco maior no PHP junto a banco de dados mySQL. <br>
-          </p>
-          <p>Já trabalhei com outras ferramentas além do ScriptCase sendo ela o CodeIgniter 3,onde iniciei <br>
-            minha carreira com desenvolvimento web, também tendo um grande foco no PHP. <br>
-          </p>
-          <p>
-            Além do desenvolvimento web tenho como hobby o desenvolvimento de jogos através da engine unity3D, <br>
-            desenvolvimento não somente scripts mas também fazendo ilustrações com as ferramentas photoshop cs6 <br>
-            e paintTool Sai.
-          </p>
+  <section id="sobre-mim" class="about">
+    <div class="container">
+      <h2 class="section-title">Sobre Mim</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Olá! Sou Lucas, desenvolvedor web especializado em criar soluções digitais eficientes e modernas. Atualmente trabalho com desenvolvimento web através da ferramenta ScriptCase.</p>
+          <p>Tenho experiência com diversas tecnologias web como HTML, CSS, JavaScript e PHP, com foco maior no PHP e banco de dados MySQL. Iniciei minha carreira com o framework CodeIgniter 3, o que me proporcionou uma base sólida em desenvolvimento web.</p>
+          <p>Além do desenvolvimento web, tenho como hobby a criação de jogos utilizando a engine Unity3D, onde desenvolvo não apenas scripts, mas também ilustrações utilizando ferramentas como Photoshop CS6 e PaintTool SAI.</p>
+        </div>
+        <div class="about-info">
+          <div class="info-item">
+            <h3>Formação</h3>
+            <p>Desenvolvimento Web Full Stack</p>
+          </div>
+          <div class="info-item">
+            <h3>Localização</h3>
+            <p>Brasil</p>
+          </div>
+          <div class="info-item">
+            <h3>Contato</h3>
+            <p>lucasmarceloci@gmail.com</p>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/lucas-marcelo-4259b8168/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/LucasMCI" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-
-    <div class="col-6">
-      <div id="projects" class="projects">
-        <h2>Projetos</h2>
-        <p>Aqui estão alguns dos meus projetos:</p>
-        <hr>
-        <h4>Hungry Ninja</h4>
-        <p>
-          <a href="https://play.google.com/store/apps/details?id=com.DmvGamestudio.HungryNinjaminigame&hl=pt&gl=US"><img
-              class="imgtext" src="imgs/hn.webp" title="Hungry Ninja" style="width: 125px;"></a> <br>
-          Hungry Ninja é um jogo mobile casual desenvolvido na Unity Engine. O objetivo principal é desviar de obstáculos enquanto coleta alimentos para acumular a maior pontuação possível. O jogo apresenta controles simples e uma jogabilidade viciante, ideal para sessões rápidas.
-        </p>
-        <div class="wrapper">
-          <img src="imgs/mapa1.JPG" style="max-width: 100px; margin: 5px; border-radius: 5px;">
-          <img src="imgs/mapa2.JPG" style="max-width: 100px; margin: 5px; border-radius: 5px;">
-          <img src="imgs/mapa3.JPG" style="max-width: 100px; margin: 5px; border-radius: 5px;">
+  <section id="habilidades" class="skills">
+    <div class="container">
+      <h2 class="section-title">Minhas Habilidades</h2>
+      <div class="skills-content">
+        <div class="skills-category">
+          <h3>Frontend</h3>
+          <div class="skill-item">
+            <span>HTML</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+            <span class="skill-percentage">90%</span>
+          </div>
+          <div class="skill-item">
+            <span>CSS</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+            <span class="skill-percentage">85%</span>
+          </div>
+          <div class="skill-item">
+            <span>JavaScript</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+            <span class="skill-percentage">75%</span>
+          </div>
         </div>
-        <hr>
-        <h4>CyberSparrow</h4>
-        <p>
-          Um navegador web experimental construído em Python, utilizando a biblioteca PyQt5 para a interface gráfica. O projeto foi desenvolvido com foco em aprendizado sobre segurança da informação e exploração de funcionalidades de navegadores, como gerenciamento de histórico e navegação segura.
-          <br>
-          <a href="https://github.com/LucasMCI/CyberSparrow" target="_blank">Ver código-fonte no GitHub</a>
-          <br>
-          <img src="imgs/1.png" alt="CyberSparrow Screenshot 1" style="max-width: 200px; margin: 5px;">
-          <img src="imgs/2.png" alt="CyberSparrow Screenshot 2" style="max-width: 200px; margin: 5px;">
-        </p>
-        <hr>
-        <h4>Nutri</h4>
-        <p>
-          Uma aplicação web interativa focada em nutrição e saúde. O sistema oferece diversas calculadoras úteis, como cálculo de Índice de Massa Corporal (IMC), Taxa Metabólica Basal (TMB) e necessidades de macronutrientes (proteínas, carboidratos e gorduras), auxiliando usuários no planejamento de dietas e acompanhamento nutricional.
-          <br>
-          <a href="https://lucasmci.github.io/nutri/" target="_blank">Acessar a aplicação</a>
-          <br>
-          <img src="imgs/3.png" alt="Nutri Screenshot 1" style="max-width: 200px; margin: 5px;">
-          <img src="imgs/4.png" alt="Nutri Screenshot 2" style="max-width: 200px; margin: 5px;">
-        </p>
-        <hr>
-        <h4>Rankings</h4>
-        <p>
-          Sistema web desenvolvido em PHP com CodeIgniter 3 para gerenciamento de pontuações em atividades de equipes, especificamente criado para auxiliar na organização e acompanhamento de pontos das equipes de desbravadores da Igreja Adventista do Sétimo Dia. Facilita o registro e a visualização do desempenho das equipes em diferentes eventos e tarefas.
-          <br>
-          <a href="https://github.com/LucasMCI/ranking" target="_blank">Ver código-fonte no GitHub</a>
-          <br>
-          <img src="imgs/5.png" alt="Rankings Screenshot" style="max-width: 200px; margin: 5px;">
-        </p>
+        <div class="skills-category">
+          <h3>Backend</h3>
+          <div class="skill-item">
+            <span>PHP</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 95%"></div>
+            </div>
+            <span class="skill-percentage">95%</span>
+          </div>
+          <div class="skill-item">
+            <span>MySQL</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+            <span class="skill-percentage">90%</span>
+          </div>
+          <div class="skill-item">
+            <span>CodeIgniter</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+            <span class="skill-percentage">80%</span>
+          </div>
+        </div>
+      </div>
+      <div class="other-skills">
+        <h3>Outras Habilidades</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Unity3D</span>
+          <span class="skill-tag">Photoshop</span>
+          <span class="skill-tag">PaintTool SAI</span>
+          <span class="skill-tag">ScriptCase</span>
+          <span class="skill-tag">Responsive Design</span>
+          <span class="skill-tag">UI/UX</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
+
+  <section id="projetos" class="projects">
+    <div class="container">
+      <h2 class="section-title">Meus Projetos</h2>
+      <p class="section-description">Conheça alguns dos meus trabalhos recentes em desenvolvimento web e mobile.</p>
+      
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="imgs/1.png" alt="E-commerce Platform">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-eye"></i> Ver Demo</a>
+                <a href="https://github.com/LucasMCI/CyberSparrow" class="project-link"><i class="fab fa-github"></i> Código</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">CyberSparrow</h3>
+            <p class="project-description">Um navegador web experimental construído em Python, utilizando a biblioteca PyQt5 para a interface gráfica. Foco em segurança da informação e exploração de funcionalidades de navegadores.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">PyQt5</span>
+              <span class="project-tag">Web Security</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="imgs/hn.webp" alt="Task Management App">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://play.google.com/store/apps/details?id=com.DmvGamestudio.HungryNinjaminigame&hl=pt&gl=US" class="project-link"><i class="fas fa-eye"></i> Ver Demo</a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Hungry Ninja</h3>
+            <p class="project-description">Jogo mobile casual desenvolvido na Unity Engine. O objetivo é desviar de obstáculos enquanto coleta alimentos para acumular pontuação. Controles simples e jogabilidade viciante.</p>
+            <div class="project-tags">
+              <span class="project-tag">Unity3D</span>
+              <span class="project-tag">C#</span>
+              <span class="project-tag">Mobile</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="imgs/3.png" alt="Analytics Dashboard">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://lucasmci.github.io/nutri/" class="project-link"><i class="fas fa-eye"></i> Ver Demo</a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Nutri</h3>
+            <p class="project-description">Aplicação web interativa focada em nutrição e saúde. Oferece calculadoras de IMC, TMB e necessidades de macronutrientes, auxiliando no planejamento de dietas.</p>
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="imgs/5.png" alt="Rankings System">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-eye"></i> Ver Demo</a>
+                <a href="https://github.com/LucasMCI/ranking" class="project-link"><i class="fab fa-github"></i> Código</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Rankings</h3>
+            <p class="project-description">Sistema web em PHP com CodeIgniter 3 para gerenciamento de pontuações em atividades de equipes. Facilita o registro e visualização do desempenho em diferentes eventos.</p>
+            <div class="project-tags">
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">CodeIgniter</span>
+              <span class="project-tag">MySQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="view-more">
+        <a href="#" class="btn btn-outline">Ver Mais Projetos</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contact">
+    <div class="container">
+      <h2 class="section-title">Entre em Contato</h2>
+      <p class="section-description">Vamos conversar? Entre em contato comigo através dos canais abaixo.</p>
+      
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p>lucasmarceloci@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Localização</h3>
+              <p>Brasil</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/lucas-marcelo-4259b8168/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/LucasMCI" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>DevPortfolio</h2>
+          <p>Desenvolvedor Full Stack especializado em soluções web modernas e eficientes.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre-mim">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contato</h3>
+          <p><i class="fas fa-envelope"></i> lucasmarceloci@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Brasil</p>
+        </div>
+        <div class="footer-social">
+          <h3>Redes Sociais</h3>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/lucas-marcelo-4259b8168/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/LucasMCI" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Lucas Marcelo. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div id="projectModal" class="project-modal">
+    <div class="modal-container">
+      <span class="close-modal">&times;</span>
+      <div class="modal-content">
+        <h2 id="modal-title"></h2>
+        <div class="modal-description" id="modal-description"></div>
+        
+        <div class="modal-gallery">
+          <div class="gallery-main">
+            <img id="modal-main-image" src="" alt="Imagem principal do projeto">
+          </div>
+          <div class="gallery-thumbs" id="modal-thumbs"></div>
+        </div>
+        
+        <div class="modal-tags" id="modal-tags"></div>
+        
+        <div class="modal-links">
+          <a href="#" id="modal-demo-link" class="btn btn-primary" target="_blank"><i class="fas fa-eye"></i> Ver Demo</a>
+          <a href="#" id="modal-code-link" class="btn btn-outline" target="_blank"><i class="fab fa-github"></i> Ver Código</a>
+        </div>
       </div>
     </div>
   </div>
+  
+  <!-- Image Modal -->
+  <div id="imageModal" class="image-modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-img" id="expandedImg">
+  </div>
 
+  <script>
+    // Theme Toggle
+    const themeButton = document.getElementById('theme-button');
+    const body = document.body;
+    
+    themeButton.addEventListener('click', () => {
+      body.classList.toggle('dark-theme');
+      
+      if (body.classList.contains('dark-theme')) {
+        themeButton.innerHTML = '<i class="fas fa-sun"></i>';
+      } else {
+        themeButton.innerHTML = '<i class="fas fa-moon"></i>';
+      }
+    });
 
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+          
+          // Update active link
+          document.querySelectorAll('nav a').forEach(link => {
+            link.classList.remove('active');
+          });
+          this.classList.add('active');
+        }
+      });
+    });
 
+    // Active menu based on scroll position
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('nav a');
+      
+      let current = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        
+        if (pageYOffset >= sectionTop - 100) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Project Data
+    const projectsData = [
+      {
+        id: "cybersparrow",
+        title: "CyberSparrow",
+        description: "Um navegador web experimental construído em Python, utilizando a biblioteca PyQt5 para a interface gráfica. Foco em segurança da informação e exploração de funcionalidades de navegadores.<br><br>Este projeto foi desenvolvido como uma forma de estudar os princípios de funcionamento de navegadores web e implementar recursos de segurança personalizados. Inclui funcionalidades como bloqueio de anúncios, modo de navegação privada e ferramentas para desenvolvedores.",
+        images: ["imgs/1.png", "imgs/2.png"],
+        tags: ["Python", "PyQt5", "Web Security"],
+        demoLink: "#",
+        codeLink: "https://github.com/LucasMCI/CyberSparrow"
+      },
+      {
+        id: "hungryninja",
+        title: "Hungry Ninja",
+        description: "Jogo mobile casual desenvolvido na Unity Engine. O objetivo é desviar de obstáculos enquanto coleta alimentos para acumular pontuação. Controles simples e jogabilidade viciante.<br><br>Hungry Ninja foi desenvolvido para plataformas Android e iOS, utilizando mecânicas simples mas desafiadoras. O jogo conta com sistema de progressão, desbloqueio de personagens e tabela de classificação online.",
+        images: ["imgs/hn.webp", "imgs/mapa1.jpg", "imgs/mapa2.jpg","imgs/mapa3.jpg","imgs/mapa4.jpg"],
+        tags: ["Unity3D", "C#", "Mobile"],
+        demoLink: "https://play.google.com/store/apps/details?id=com.DmvGamestudio.HungryNinjaminigame&hl=pt&gl=US",
+        codeLink: "#"
+      },
+      {
+        id: "nutri",
+        title: "Nutri",
+        description: "Aplicação web interativa focada em nutrição e saúde. Oferece calculadoras de IMC, TMB e necessidades de macronutrientes, auxiliando no planejamento de dietas.<br><br>Este projeto foi desenvolvido para ajudar pessoas a entenderem melhor suas necessidades nutricionais. A aplicação permite que os usuários calculem seu Índice de Massa Corporal (IMC), Taxa Metabólica Basal (TMB) e distribuição ideal de macronutrientes com base em seus objetivos.",
+        images: ["imgs/3.png", "imgs/4.png"],
+        tags: ["HTML", "CSS", "JavaScript"],
+        demoLink: "https://lucasmci.github.io/nutri/",
+        codeLink: "#"
+      },
+      {
+        id: "rankings",
+        title: "Rankings",
+        description: "Sistema web em PHP com CodeIgniter 3 para gerenciamento de pontuações em atividades de equipes. Facilita o registro e visualização do desempenho em diferentes eventos.<br><br>O sistema permite criar competições, registrar equipes, adicionar participantes e gerenciar pontuações em tempo real. Inclui painéis de visualização, relatórios exportáveis e diferentes níveis de acesso para administradores e usuários comuns.",
+        images: ["imgs/5.png"],
+        tags: ["PHP", "CodeIgniter", "MySQL"],
+        demoLink: "#",
+        codeLink: "https://github.com/LucasMCI/ranking"
+      }
+    ];
+
+    // Project Modal
+    const projectModal = document.getElementById("projectModal");
+    const modalTitle = document.getElementById("modal-title");
+    const modalDescription = document.getElementById("modal-description");
+    const modalMainImage = document.getElementById("modal-main-image");
+    const modalThumbs = document.getElementById("modal-thumbs");
+    const modalTags = document.getElementById("modal-tags");
+    const modalDemoLink = document.getElementById("modal-demo-link");
+    const modalCodeLink = document.getElementById("modal-code-link");
+    
+    // Open project modal when clicking on project cards
+    document.querySelectorAll('.project-card').forEach((card, index) => {
+      card.addEventListener('click', function(e) {
+        // Don't open modal if clicking on links
+        if (e.target.closest('.project-links')) return;
+        
+        const project = projectsData[index];
+        
+        // Set modal content
+        modalTitle.textContent = project.title;
+        modalDescription.innerHTML = project.description;
+        modalMainImage.src = project.images[0];
+        
+        // Clear and populate thumbnails
+        modalThumbs.innerHTML = '';
+        project.images.forEach(img => {
+          const thumb = document.createElement('img');
+          thumb.src = img;
+          thumb.alt = "Thumbnail";
+          thumb.addEventListener('click', () => {
+            modalMainImage.src = img;
+          });
+          modalThumbs.appendChild(thumb);
+        });
+        
+        // Clear and populate tags
+        modalTags.innerHTML = '';
+        project.tags.forEach(tag => {
+          const tagSpan = document.createElement('span');
+          tagSpan.className = 'project-tag';
+          tagSpan.textContent = tag;
+          modalTags.appendChild(tagSpan);
+        });
+        
+        // Set links
+        modalDemoLink.href = project.demoLink;
+        modalCodeLink.href = project.codeLink;
+        
+        // Show modal
+        projectModal.style.display = "flex";
+      });
+    });
+    
+    // Close project modal
+    document.querySelectorAll('.close-modal').forEach(closeBtn => {
+      closeBtn.addEventListener('click', function() {
+        projectModal.style.display = "none";
+        imageModal.style.display = "none";
+      });
+    });
+    
+    // Close modal when clicking outside
+    window.addEventListener('click', function(event) {
+      if (event.target == projectModal) {
+        projectModal.style.display = "none";
+      }
+      if (event.target == imageModal) {
+        imageModal.style.display = "none";
+      }
+    });
+    
+    // Image Modal
+    const imageModal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("expandedImg");
+    
+    // Open image modal when clicking on modal main image
+    modalMainImage.addEventListener('click', function() {
+      imageModal.style.display = "flex";
+      modalImg.src = this.src;
+    });
+
+    // Removed form submission code
+  </script>
 </body>
-
-<!-- The Modal -->
-<div id="imageModal" class="image-modal">
-  <span class="close-modal">&times;</span>
-  <img class="modal-content" id="expandedImg">
-</div>
-
-<script>
-
-  function btn0() {
-  var header = document.getElementsByTagName('header')[0];
-  var body = document.getElementsByTagName('body')[0];
-  var about = document.getElementById('about-me');
-  var project = document.getElementById('projects');
-  
-  header.className = 'header-0';
-  body.className = 'body-0';
-  about.className = 'about-me';
-  project.className = 'projects';
-
-}
-
-var botao1 = document.getElementById('btn0');
-botao1.addEventListener('click', btn0);
-  //------------------------------------------------------------------------------//
-  function btn1() {
-  var header = document.getElementsByTagName('header')[0];
-  var body = document.getElementsByTagName('body')[0];
-  var about = document.getElementById('about-me');
-  var project = document.getElementById('projects');
-  
-  header.className = 'header-0';
-  body.className = 'body-1';
-  about.className = 'about-me-1';
-  project.className = 'projects-1';
-
-}
-
-var botao1 = document.getElementById('btn1');
-botao1.addEventListener('click', btn1);
-//---------------------------------------------------------------------------//
-function btn2() {
-  var header = document.getElementsByTagName('header')[0];
-  var body = document.getElementsByTagName('body')[0];
-  var about = document.getElementById('about-me');
-  var project = document.getElementById('projects');
-
-  
-  header.className = 'header-2';
-  body.className = 'body-2';
-  about.className = 'about-me-2';
-  project.className = 'projects-2';
-
-}
-
-var botao1 = document.getElementById('btn2');
-botao1.addEventListener('click', btn2);
-
-// Get the modal
-var modal = document.getElementById("imageModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var modalImg = document.getElementById("expandedImg");
-
-// Get all images within the projects sections
-var projectImages = document.querySelectorAll('.projects img, .projects-1 img, .projects-2 img');
-
-// Loop through all project images and add click event listener
-projectImages.forEach(img => {
-  img.onclick = function(){
-    modal.style.display = "flex"; // Use flex to center content
-    modalImg.src = this.src;
-  }
-});
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close-modal")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-
-// Also close modal if user clicks anywhere outside the image
-modal.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-</script>
-
 </html>
